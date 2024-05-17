@@ -1,0 +1,243 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="wedfeat.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        body {
+            background-color: #f0f0f0; 
+        }
+	h1, p {
+            font-family: 'Pacifico';
+        }
+    </style>
+</head>
+
+<body>
+	<div class="tabs">
+        	<div class="tab" onclick="scrollToSection('home')" style="font-family: 'Pacifico';">Home</div>
+        	<div class="tab" onclick="scrollToSection('rsvp')" style="font-family: 'Pacifico';">							RSVP</div>
+		<div class="tab" onclick="scrollToSection('lodging')" style="font-family: 'Pacifico';">							Lodging</div>
+        	<div class="tab" onclick="scrollToSection('Durban')" style="font-family: 'Pacifico';">							Durban</div>
+	</div>
+	<div id="home" style="font-family: 'Pacifico'; background-image: url('engagebackground.jpg');">
+    		<h1 style="text-align: center; padding-top: 7.5vh; margin-bottom: -1vh;">Lionnel and Danita - 2024</h1>
+		<h2 style="text-align: center;">Please join us for our wedding celebration</h2>
+			<div class="grid-container">
+				<div class="left-side">
+					<img src="engagement.jpg" style="width: 55vw; height: auto;">
+				</div>
+	
+				<div class="right-side">
+					<div style="padding-left: 10vw";>
+						<h2>Ceremony</h2>
+						<p>St. Paul's Anglican Church</p>
+						<p>1pm</p>
+						<p>161 Monty Naicker Rd, Durban Central</p>
+						<p style="margin-bottom: 4vh;">Durban, 4001, South Africa</p>
+
+						<h2>Cocktail Hour</h2>
+						<p>To occur in the church garden following the ceremony</p>
+						<p style="margin-bottom: 4vh;">3-4pm</p>
+
+						<h2>Reception</h2>
+						<p>St. Paul's Angilican Church Upstairs Hall</p>
+						<p>4pm</p>
+						<p>161 Monty Naicker Rd, Durban Central</p>
+						<p style="margin-bottom: 4vh;">Durban, 4001, South Africa</p>
+
+					</div>
+				</div>
+			</div>
+	</div>
+	<div id="rsvp" class="grid-container" style="background-color: lightcoral;">
+		<div class="left-side">
+			<h1>Please RSVP</h1>
+			<form id="rsvpForm" action="#" method="post">
+				<div class="form-group">
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required>
+				</div>
+				<div class="form-group">
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required>
+				</div>
+				<div id="additionalGuests"></div>
+				<div class="button-group">
+					<button type="button" id="addGuestBtn">Add Guest</button>
+				</div>
+				<div class="button-group">
+					<label for="going" class="circle-button">
+						<input type="radio" id="going" name="rsvp" value="Going" required>
+						Going
+					</label>
+					<label for="notGoing" class="circle-button">
+						<input type="radio" id="notGoing" name="rsvp" value="Not Able to Attend" required>
+						Not Able to Attend
+					</label>
+				</div>
+				<div class="form-group">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div class="right-side">
+			<img src="danita-1.jpg" style="width: 30vw; height: auto;">
+		</div>
+	</div>
+
+	<div id="lodging" class="grid-container" style="background-color: #87CEEB;">
+		<div class="left-side">
+
+			<img src="onomo_hotel.jpg" style="width: 45vw; height: auto; margin-top: 15vh; margin-bottom: 0vh;">
+			<p style="margin-top: 1vh; margin-left: 2vw;">Onomo Hotel</p>
+
+			<img src="onrigde.jpg" style="width: 45vw; height: auto; margin-top: 15vh; margin-bottom: 0vh;">
+			<p style="margin-top: 1vh; margin-left: 2vw;">Onridge Guesthouse</p>
+			
+			<img src="carrington.jpg" style="width: 45vw; height: auto; margin-top: 15vh; margin-bottom: 0vh;">
+			<p style="margin-top: 1vh; margin-left: 2vw;">Carrington Guesthouse</p>
+
+		</div>
+
+		<div class="right-side" style="text-align: right; margin-right: 2vw;">
+			<h1 style="margin-bottom: 5vh;">Lodging</h1>
+			<div style="margin-right: 3vw;">
+				<h2 style="margin-bottom: 5vh; font-size: 3vw;">Hotels</h2>
+				
+					<p>Onomo Hotel</p>
+					<p>56 KE Masinga Rd, Stamford Hill</p>
+					<p style="margin-bottom: 8vh;">Durban, 4025, South Africa</p>
+
+					<p>Coastlands Musgrave Hotel</p>
+					<p>315-319 Peter Mokaba Ridge, Musgrave</p>
+					<p>Durban, 4001, South Africa</p>
+					<p style="margin-bottom: 8vh;">Tel: +27 31 271 8200</p>
+
+					<p></p>
+
+					<p>Florida Park Hotel</p>
+					<p>170 Florida Road Morningside</p>
+					<p>Durban, KwaZulu-Natal, 4001</p>
+					<p style="margin-bottom: 8vh;">Tel: +27 31 303 1146</p>
+
+				<h2 style="margin-bottom: 5vh; font-size: 3vw;">Guest Houses</h2>
+
+					<p>268 On Ridge Guesthouse</p>
+					<p>268 Mazisi Kunene Road, Glenwood</p>
+					<p style="margin-bottom: 8vh;">4001 Durban, South Africa</p>
+
+					<p>Acorn B&amp;B</p>
+					<p>3 Wolfenden Grove, Essenwood</p>
+					<p>Durban, 4001, South Africa</p>
+					<p style="margin-bottom: 8vh;">Tel: +27 83 777 7012</p>
+
+					<p>Carrington Guest House</p>
+					<p>20 Mountain Rise, Glenmore, Durban</p>
+					<p>Kwa-Zulu Natal, 4093, South Africa</p>
+					<p style="margin-bottom: 8vh;">Tel: +27 31 261 4577</p>
+
+				<h2 style="margin-bottom: 5vh; font-size: 3vw;">Air BnB</h2>
+
+					<p style="margin-bottom: 8vh;">This is an another option for large groups. 
+						We recommend accommodations in these neighborhoods: Glenwood, Morningside, and Essenwood</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="Durban" class="grid-container" style="background-color: #C7EFCF; grid-template-columns: 35% 65%;">
+		<div class="left-side">
+			<h1 style="margin-bottom: 5vh;">Durban</h1>
+				<p style="margin-bottom: 8vh; margin-left: 2vw;">Durban is known as the 'warmest place to be' in South Africa and October is a lovely month to be in the 
+					city as it will be Springtime here and not too humid, perfect for exploring the city and enjoying
+					its natural landscapes. Durban is also home to one of the country's busiest ports, with stunning 
+					views overlooking the Indian Ocean.</p >
+
+				<h2 style="margin-bottom: 3vh; margin-left: 2vw;">Beaches</h2>
+			
+				<div style="margin-bottom: 3vh;">
+        <a href="https://www.worldbeachguide.com/south-africa/durban-north-beach.htm" target="_blank" style="margin-left: 2vw;">North Beach</a>
+    </div>
+    <div style="margin-bottom: 3vh;">
+        <a href="https://www.tripadvisor.com/Attraction_Review-g312595-d480871-Reviews-U_Shaka_Marine_World-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">UShaka Beach and Marine World</a>
+    </div>
+    <div style="margin-bottom: 8vh;">
+        <a href="https://www.tripadvisor.com/Tourism-g312608-Umhlanga_Rocks_KwaZulu_Natal-Vacations.html" target="_blank" style="margin-left: 2vw;">Umhlanga Rocks</a>
+    </div>
+
+<h2 style="margin-bottom: 3vh; margin-left: 2vw;">Gardens</h2>
+<div style="margin-bottom: 3vh;">
+        <a href="https://durbanbotanicgardens.org.za/" target="_blank" style="margin-left: 2vw;">Durban Botanic Gardens</a>
+    </div>
+    <div style="margin-bottom: 3vh;">
+        <a href="https://www.tripadvisor.com/Attraction_Review-g312595-d480869-Reviews-Mitchell_Park_Zoo-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">Mitchell’s Park</a>
+    </div>
+    <div style="margin-bottom: 8vh;">
+        <a href="https://www.tripadvisor.com/Attraction_Review-g312595-d1371604-Reviews-Durban_North_Japanese_Gardens-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">Japanese Gardens</a>
+    </div>
+
+<h2 style="margin-bottom: 3vh; margin-left: 2vw;">Gardens</h2>
+<div style="margin-bottom: 3vh;">
+        <a href="https://kknr.org.za/" target="_blank" style="margin-left: 2vw;">Krantzkloof Nature Reserve</a>
+    </div>
+    <div style="margin-bottom: 8vh;">
+        <a href="https://www.rainfarm.co.za/" target="_blank" style="margin-left: 2vw;">Rain Farm Game Lodge</a>
+    </div>
+
+<h2 style="margin-bottom: 3vh; margin-left: 2vw;">Resturants and Bars</h2>
+<div style="margin-bottom: 3vh;">
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g312595-d4241980-Reviews-House_of_Curries_on_Florida-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">House of Curries</a>
+    </div>
+<div style="margin-bottom: 3vh;">
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g312595-d2569100-Reviews-Unity-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">Unity Bar</a>
+    </div>
+<div style="margin-bottom: 3vh;">
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g312595-d4298437-Reviews-Circus_Circus_Beach_Cafe-Durban_KwaZulu_Natal.html" target="_blank" style="margin-left: 2vw;">Circus Circus</a>
+    </div>
+<div style="margin-bottom: 3vh;">
+        <a href="https://www.southafrica.net/gl/en/travel/article/a-street-full-of-durban-delights-it-s-florida-road" target="_blank" style="margin-left: 2vw;">Florida Rd. - Strip</a>
+    </div>
+    <div style="margin-bottom: 8vh;">
+        <a href="https://www.davenportsquare.co.za/" target="_blank" style="margin-left: 2vw;">Davenport Square</a>
+    </div>
+
+		</div>
+
+		<div class="right-side" style="text-align: right;">
+			
+			<img src="durban.jpeg" style="width: 45vw; height: auto; margin-top: 15vh; margin-bottom: 0vh;">
+			<p style="margin-top: 1vh; margin-right: 2vw;"></p>
+
+			<img src="durbangarden.jpg" style="width: 45vw; height: auto; margin-top: 15vh; margin-bottom: 0vh;">
+			<p style="margin-top: 1vh; margin-right: 2vw;">Durban Botanical Gardens</p>
+
+		</div>
+	</div>
+<script>
+function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({behavior: "smooth", block: "start"});
+    }
+
+let guestCounter = 1;
+
+document.getElementById('addGuestBtn').addEventListener('click', function() {
+	var additionalGuestsDiv = document.getElementById('additionalGuests');
+        var guestForm = document.createElement('div');
+        guestForm.innerHTML = 
+        	'<div class="form-group" style="padding: 1vw;">' +
+        		'<label for="additionalFirstName">Guest ' + guestCounter + ' First Name:</label>' +
+        		'<input type="text" id="additionalFirstName" name="additionalFirstName[]">' +
+        	'</div>' +
+        	'<div class="form-group" style="padding: 1vw;">' +
+                	'<label for="additionalLastName">Guest ' + guestCounter + ' Last Name:</label>' +
+                	'<input type="text" id="additionalLastName" name="additionalLastName[]">' +
+            	'</div>';
+        additionalGuestsDiv.appendChild(guestForm);
+	guestCounter ++;
+    });
+</script>
+
+</body>
+</html>
